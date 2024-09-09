@@ -1,6 +1,6 @@
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 defineProps({
   name: String,
@@ -14,17 +14,9 @@ const count = ref(0)
 
 <template>
   <div class="info">
-    <h1>{{ name }}</h1>
-    <p>{{ specialty }}</p>
-    <p>{{ courseNumber }} course</p>
-    <p>{{ group }}</p>
-    <p>Count: {{ count }}</p>
-    <button @click="count++">Increment</button>
+    <h1 class=''>{{ name }}</h1>
+    <p>Specialty: {{ specialty }}</p>
+    <p>Course: {{ courseNumber }} course</p>
+    <p>Group: {{ group }}</p>
   </div>
 </template>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
