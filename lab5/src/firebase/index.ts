@@ -2,12 +2,12 @@ import { getAuth } from 'firebase/auth';
 import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyAh912aXbsXCVVYcDdEER-IrEorLVaMDLo',
-    authDomain: 'test-21b2a.firebaseapp.com',
-    projectId: 'test-21b2a',
-    storageBucket: 'test-21b2a.firebasestorage.app',
-    messagingSenderId: '344379520512',
-    appId: '1:344379520512:web:602bc2fec7afe6b2d3cae5'
+    apiKey: import.meta.env.VUE_APP_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VUE_APP_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VUE_APP_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
